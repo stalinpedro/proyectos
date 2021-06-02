@@ -49,11 +49,14 @@ nav > a{
 }
 
 .centerTextWelcome{
-    font-size: 80px;
-    font-family: cursive;
+    margin: 10px auto;
+    width: 100%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    text-align: center;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 100PX;
 }
