@@ -17,15 +17,15 @@ body{
 
 
 nav{
-    background-color: #040f35;
-    font-size: 18px;
+    
+    font-size: 16px;
     font-family: sans-serif;
     width: 100%;
     height: 70px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 -20px 0 0;
 }
 
 /*
@@ -35,11 +35,6 @@ nav > a{
 }
 */
 
-#titulo-home{
-    font-size: 30px;
-    font-family: cursive;
-    color: white,
-}
 
 .parrafos-home{
     font-size: 25px;
@@ -61,11 +56,18 @@ nav > a{
     padding-top: 100PX;
 }
 
-nav > a > i > b > img{
+.homeimg{
     width: 10%;
     height: 10%;    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 -20px 0 0;
+}
+
+.avatar {
+    /* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 4%;
+    width: 4%;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
 }
