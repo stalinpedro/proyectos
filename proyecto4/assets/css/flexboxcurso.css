@@ -1,0 +1,38 @@
+body{
+    margin:  50px;
+    background-color: rgb(53, 52, 52);
+}
+
+.contenedor{
+    background-color: cadetblue;
+    border: 1px solid red;
+    font-size: 30px;
+    color: white;
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 50px auto 100px;
+    gap: 10px;
+
+}
+
+.contenedor > *{
+    background-color: blue;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header,footer{
+    grid-column: 1/3 span;
+}
+
+
+@media all and (max-width: 600px){
+    aside, article{
+        grid-column: 1/3 span;
+    }
+    .contenedor{
+        grid-template-rows: repeat(5, 40%);
+    }
+}

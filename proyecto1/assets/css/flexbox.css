@@ -56,30 +56,6 @@ body{
     background: no-repeat center center;
     background-size: 100% 100%;
 }
-  
-
- @media all and (max-width: 800px) {
-    .principalmenu {
-      justify-content: space-around;
-    }
- }
-  
- @media all and (max-width: 600px) {
-    .principalmenu {
-      flex-flow: column wrap;
-      padding: 0;
-    }
-    .principalmenu a { 
-      text-align: center; 
-      padding: 10px;
-      border-top: 1px solid rgba(255, 255, 255,0.3); 
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .principalmenu li:last-of-type a {
-      border-bottom: none;
-    }
- }
-
 
 .centerTextWelcome{
     margin: 10px auto;
@@ -114,5 +90,32 @@ body{
     padding:5px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 255, 0.952);
 }
+
+
+ @media all and (max-width: 800px) {
+    .principalmenu {
+      justify-content: space-around;
+    }
+ }
+  
+ @media all and (max-width: 500px) {
+    .principalmenu {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .principalmenu a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .principalmenu li:last-of-type a {
+      border-bottom: none;
+    }
+    .productoservicios{
+        flex-flow: column wrap;
+    }
+ }
+
 
 

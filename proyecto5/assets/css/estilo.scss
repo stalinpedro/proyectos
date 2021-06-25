@@ -1,0 +1,16 @@
+@import 'navbarp5';
+@import 'carruselp5';
+@import 'cardp5';
+
+@mixin txtTitulos($tamano, $color, $alineacion) {
+  display: flex;
+  font-size: $tamano;
+  color: $color;
+  align-items: $alineacion;
+  justify-content: $alineacion;
+}
+
+.tTitulos{
+  @include txtTitulos(30px, rgb(24, 155, 31), center);
+
+}
