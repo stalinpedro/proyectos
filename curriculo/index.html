@@ -1,34 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width"/>
-    <title>CV Stalin</title>
-    <link rel="stylesheet" href="assets/css/curriculo.css">
-    <link rel="stylesheet" href="assets/css/all.css">
-    <script defer src="assets/js/curriculo.js"></script>
-    <script defer src="assets/js/jquery-3.6.0.js"></script>
-    <script defer src="assets/js/all.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Curriculum Vitae</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="assets/css/main.css">
 </head>
 <body>
-    <nav> 
-        <ul class="menu"> 
-            <li class="logo"><a href="#">MiAPP</a></li> 
-            <li class="item"><a href="#">Home</a></li> 
-            <li class="item"><a href="#">About</a></li> 
-            <li class="item"><a href="#">Services</a></li> 
-            <li class="item"><a href="#">Features</a></li> 
-            <li class="item"><a href="#">Blog</a></li> 
-            <li class="item"><a href="#">Contact</a> </li> 
-            <li class="item button"><a href="#">Log In</a></li> 
-            <li class="item button secondary"><a href="#">Sign Up</a></li> 
-            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li> 
-        </ul> 
-    </nav>
+
+    <!-- Boton hacia arriba -->
+    <a class="ir-arriba"  javascript:void(0) title="Volver arriba">
+        <span class="fa-stack">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-arrow-up fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+
+    <header>
+        <!-- Barra de navegación -->
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!--FIN Barra de navegación -->    
+    </header>
+    <section>
+        <!-- Inicia Carrusel -->
+        <div id="id="productos"" class="carousel-wrapper">
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="image-one"></div>
+                <div class="image-two"></div>
+                <div class="image-three"></div>
+              </div>
+            </div>
+          </div>
+        <!-- Fin Carrusel -->
+
+        <!-- Inicia CARDS -->
+        <div id="servicios" class="contenedor">
+            <div class="cardcu">
+                <img class="imgavatar" src="assets/images/img_avatar2.png" alt="Avatar" style="width:100%">
+                <div class="contenido">
+                <h4><b>Proyectos Web</b></h4>
+                <p>Arquitectura e Ingeniería de Software</p>
+                </div>
+            </div>
     
-    <div class="container">        
-        <div class="avatar" style="background-image: url(assets/images/mifoto.jpg)"></div>
-    </div>
+            <div class="cardcu">
+                <img class="imgavatar" src="assets/images/img_avatar.png" alt="Avatar" style="width:100%">
+                <div class="contenido">
+                <h4><b>IoT</b></h4>
+                <p>Control y Automatización de casas y edificios</p>
+                </div>
+            </div>
+    
+            <div class="cardcu">
+                <img class="imgavatar" src="assets/images/img_avatar.png" alt="Avatar" style="width:100%">
+                <div class="contenido">
+                <h4><b>Infraestructura</b></h4>
+                <p>Arquitectura e Ingeniería de Datacenters
+                </p>
+                </div>
+            </div>        
+            
+            <div class="cardcu">
+                <img class="imgavatar" src="assets/images/img_avatar2.png" alt="Avatar" style="width:100%">
+                <div class="contenido">
+                <h4><b>ERP</b></h4>
+                <p>Implementación de ERP's</p>
+                </div>
+            </div> 
+        </div>
+        <!-- Fin CARDS -->
+    </section>
+    <footer id="contacto" class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">MiEmpresa</h1>        
+            <h2>Contacto</h2>
+            <address>
+                Cuernavaca Morelos C.P. 62900<br>    
+                <a class="footer__btn" href="mailto:stalin_pedro@hotmail.com">Correo</a>
+            </address>
+        </div>
+        
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+                <ul class="nav__ul">
+                    <li>
+                    <a href="#">CRM</a>
+                    </li>
+            
+                    <li>
+                    <a href="#">Impresión 3D</a>
+                    </li>
+                        
+                    <li>
+                    <a href="#">Alternative Ads</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technología</h2>
+                <ul class="nav__ul nav__ul--extra">                
+                    <li>
+                        <a href="#">Desarrollo de Software</a>
+                    </li>
+                    <li>
+                        <a href="#">IoT</a>
+                    </li>
+                    <li>
+                        <a href="#">Automatización</a>
+                    </li>
+                    <li>
+                        <a href="#">ERP</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>            
+                <ul class="nav__ul">
+                    <li>
+                    <a href="#">Politica de privacidad</a>
+                    </li>
+                    
+                    <li>
+                    <a href="#">Terminos de uso</a>
+                    </li>
+                    
+                    <li>
+                    <a href="#">Mapa del sitio</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="legal">
+            <p>&copy; 2021 MiEmpresa. Todos los derechos reservados.</p>    
+            <div class="legal__links">
+                <span>Creado por <span class="heart">@</span> sistemas Stalin</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    <script src="https://kit.fontawesome.com/eb07f47d0b.js" crossorigin="anonymous"></script>
+    <script src="assets/js/curriculo.js"></script>
 </body>
 </html>

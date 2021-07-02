@@ -1,0 +1,38 @@
+@import 'navbarcur.scss';
+@import 'footercur.scss';
+@import 'cardcur.scss';
+@import 'sectioncur.scss';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: acumin-pro, system-ui, sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+
+}
+
+.ir-arriba{
+    display:none;
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+  }
